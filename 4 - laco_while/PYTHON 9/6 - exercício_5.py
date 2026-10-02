@@ -16,7 +16,6 @@ while tentativas < limite_tentativas:
         else:
             tentativas += 1
             tentativas_restantes = limite_tentativas - tentativas
-            
             if tentativas_restantes > 0:
                 print(f'\nLogin ou senha inválidos. Você ainda tem {tentativas_restantes} tentativa(s).\n')
             else:
