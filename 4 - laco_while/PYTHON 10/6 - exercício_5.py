@@ -7,7 +7,7 @@ QUANT_TENT = 3
 for i in range (QUANT_TENT):
     while True:
         nota = int(input(f'Digite a {1+i}ª nota: '))
-        if nota < 0 and nota > 10:
+        if nota < 0 or nota > 10:
             input('Nota inválida \n Tente Novamente \n Pressione uma tecla para continuar...')
             os.system('cls')
         else:
