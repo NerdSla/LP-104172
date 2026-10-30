@@ -8,7 +8,7 @@ while True:
     match opcao:
         case '1':
             print('\n== CADASTRAR SÉRIE ==')
-            nome = str(input('Digite o nome da série: ')).strip().upper()
+            nome = input('Digite o nome da série: ').strip().upper()
             if nome == '':
                 print('O nome não pode ficar vazio')
             elif nome in lista_series:
@@ -24,7 +24,7 @@ while True:
             else:
                 for i, série in enumerate(lista_series):
                     print(f'{i+1}ª Série: {série}')
-                print(f'Total de produtos: {len(lista_series)}')
+                print(f'Total de séries: {len(lista_series)}')
             input('Pressione qualquer tecla para continuar...')
         case '0':
             print('Saindo do programa...')
